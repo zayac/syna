@@ -54,6 +54,7 @@
   padding-top: $navbar-brand-padding-y;
   padding-bottom: $navbar-brand-padding-y;
   margin-right: $navbar-padding-x;
+  font-family: $navbar-brand-font-family;
   @include font-size($navbar-brand-font-size);
   line-height: inherit;
   white-space: nowrap;

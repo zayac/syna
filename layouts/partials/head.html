@@ -59,6 +59,9 @@
   {{- $style := $styleTemplated | resources.ToCSS $options | resources.Minify | resources.Fingerprint }}
   <link href="{{ $style.RelPermalink }}" rel="stylesheet">
 
+  {{ "<!-- Custom Fonts -->" | safeHTML }}
+  <link href="https://fonts.googleapis.com/css?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+
   {{- with .Site.Params.custom -}}
     {{- with .favicon }}
       <link rel="shortcut icon" type="image/x-icon" href="{{ . | relLangURL }}">
