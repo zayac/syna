@@ -6,9 +6,9 @@
 
 .btn {
   display: inline-block;
-  font-family: $btn-font-family;
+  font-family: $font-family-sans-serif;
   font-weight: $btn-font-weight;
-  color: $body-color;
+  color: $body-bg;
   text-align: center;
   white-space: $btn-white-space;
   vertical-align: middle;
@@ -16,6 +16,7 @@
   user-select: none;
   background-color: transparent;
   border: $btn-border-width solid transparent;
+  text-transform: uppercase;
   @include button-size($btn-padding-y, $btn-padding-x, $btn-font-size, $btn-line-height, $btn-border-radius);
   @include transition($btn-transition);
 

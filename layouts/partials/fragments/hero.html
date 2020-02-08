@@ -69,7 +69,7 @@
     {{- else -}}
       {{- with .Params.title }}
         <div class="hero-title-container row justify-content-center align-items-start">
-          <h1 class="hero-title overlay jumbotron-heading
+          <h1 class="hero-title overlay jumbotron-heading text-uppercase
             {{- partial "helpers/text-color.html" (dict "self" $self.self) -}}
           ">
             {{- . -}}
@@ -79,7 +79,7 @@
     {{- end -}}
     {{- with .Params.subtitle }}
       <div class="hero-subtitle-container row justify-content-center align-items-start">
-        <div class="hero-subtitle overlay lead
+        <div class="hero-subtitle overlay lead text-uppercase
           {{- partial "helpers/text-color.html" (dict "self" $self.self) -}}
         ">
           {{- . | markdownify -}}
